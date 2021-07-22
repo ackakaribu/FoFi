@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3EB70CA426A9FF5200FBFD6A /* MealsListRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EB70CA326A9FF5200FBFD6A /* MealsListRepository.swift */; };
 		F5625B1E26A0B2DD008B8A1C /* MealsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5625B1D26A0B2DD008B8A1C /* MealsView.swift */; };
 		F5625B2026A0B2E8008B8A1C /* MealsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5625B1F26A0B2E8008B8A1C /* MealsViewModel.swift */; };
 		F5625B2326A0B32F008B8A1C /* Meal.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5625B2226A0B32F008B8A1C /* Meal.swift */; };
@@ -15,7 +16,6 @@
 		F5625B2B26A0B7A3008B8A1C /* MealListItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5625B2A26A0B7A3008B8A1C /* MealListItemView.swift */; };
 		F5994D5C26A0AE6A00B94F70 /* FoFiApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5994D5B26A0AE6A00B94F70 /* FoFiApp.swift */; };
 		F5994D6026A0AE6D00B94F70 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F5994D5F26A0AE6D00B94F70 /* Assets.xcassets */; };
-		F5994D6326A0AE6D00B94F70 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F5994D6226A0AE6D00B94F70 /* Preview Assets.xcassets */; };
 		F5994D6E26A0AE6D00B94F70 /* FoFiTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5994D6D26A0AE6D00B94F70 /* FoFiTests.swift */; };
 		F5994D7926A0AE6D00B94F70 /* FoFiUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5994D7826A0AE6D00B94F70 /* FoFiUITests.swift */; };
 /* End PBXBuildFile section */
@@ -38,6 +38,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3EB70CA326A9FF5200FBFD6A /* MealsListRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealsListRepository.swift; sourceTree = "<group>"; };
 		F5625B1D26A0B2DD008B8A1C /* MealsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealsView.swift; sourceTree = "<group>"; };
 		F5625B1F26A0B2E8008B8A1C /* MealsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealsViewModel.swift; sourceTree = "<group>"; };
 		F5625B2226A0B32F008B8A1C /* Meal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Meal.swift; sourceTree = "<group>"; };
@@ -47,7 +48,6 @@
 		F5994D5826A0AE6A00B94F70 /* FoFi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FoFi.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F5994D5B26A0AE6A00B94F70 /* FoFiApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoFiApp.swift; sourceTree = "<group>"; };
 		F5994D5F26A0AE6D00B94F70 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		F5994D6226A0AE6D00B94F70 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		F5994D6426A0AE6D00B94F70 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F5994D6926A0AE6D00B94F70 /* FoFiTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FoFiTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F5994D6D26A0AE6D00B94F70 /* FoFiTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoFiTests.swift; sourceTree = "<group>"; };
@@ -82,19 +82,55 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		F5625B1926A0B28A008B8A1C /* Screens */ = {
+		3EB70C9926A9ECBF00FBFD6A /* App */ = {
 			isa = PBXGroup;
 			children = (
-				F5625B1A26A0B2AF008B8A1C /* MealsList */,
+				F5994D5B26A0AE6A00B94F70 /* FoFiApp.swift */,
 			);
-			path = Screens;
+			path = App;
+			sourceTree = "<group>";
+		};
+		3EB70C9D26A9EE1700FBFD6A /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		3EB70C9E26A9EE8400FBFD6A /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				F5994D5F26A0AE6D00B94F70 /* Assets.xcassets */,
+				F5994D6426A0AE6D00B94F70 /* Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		3EB70CA026A9F06400FBFD6A /* API */ = {
+			isa = PBXGroup;
+			children = (
+				F5625B2126A0B316008B8A1C /* Models */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		F5625B1926A0B28A008B8A1C /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				3EB70C9926A9ECBF00FBFD6A /* App */,
+				F5625B1A26A0B2AF008B8A1C /* MealsList */,
+				3EB70C9D26A9EE1700FBFD6A /* Shared */,
+			);
+			path = Features;
 			sourceTree = "<group>";
 		};
 		F5625B1A26A0B2AF008B8A1C /* MealsList */ = {
 			isa = PBXGroup;
 			children = (
+				F5625B2A26A0B7A3008B8A1C /* MealListItemView.swift */,
 				F5625B1D26A0B2DD008B8A1C /* MealsView.swift */,
 				F5625B1F26A0B2E8008B8A1C /* MealsViewModel.swift */,
+				3EB70CA326A9FF5200FBFD6A /* MealsListRepository.swift */,
 			);
 			path = MealsList;
 			sourceTree = "<group>";
@@ -107,22 +143,6 @@
 				F5625B2626A0B654008B8A1C /* Mocks.swift */,
 			);
 			path = Models;
-			sourceTree = "<group>";
-		};
-		F5625B2826A0B768008B8A1C /* UIComponents */ = {
-			isa = PBXGroup;
-			children = (
-				F5625B2926A0B770008B8A1C /* ListItems */,
-			);
-			path = UIComponents;
-			sourceTree = "<group>";
-		};
-		F5625B2926A0B770008B8A1C /* ListItems */ = {
-			isa = PBXGroup;
-			children = (
-				F5625B2A26A0B7A3008B8A1C /* MealListItemView.swift */,
-			);
-			path = ListItems;
 			sourceTree = "<group>";
 		};
 		F5994D4F26A0AE6A00B94F70 = {
@@ -148,23 +168,11 @@
 		F5994D5A26A0AE6A00B94F70 /* FoFi */ = {
 			isa = PBXGroup;
 			children = (
-				F5625B2826A0B768008B8A1C /* UIComponents */,
-				F5625B2126A0B316008B8A1C /* Models */,
-				F5625B1926A0B28A008B8A1C /* Screens */,
-				F5994D5B26A0AE6A00B94F70 /* FoFiApp.swift */,
-				F5994D5F26A0AE6D00B94F70 /* Assets.xcassets */,
-				F5994D6426A0AE6D00B94F70 /* Info.plist */,
-				F5994D6126A0AE6D00B94F70 /* Preview Content */,
+				3EB70CA026A9F06400FBFD6A /* API */,
+				F5625B1926A0B28A008B8A1C /* Features */,
+				3EB70C9E26A9EE8400FBFD6A /* Resources */,
 			);
 			path = FoFi;
-			sourceTree = "<group>";
-		};
-		F5994D6126A0AE6D00B94F70 /* Preview Content */ = {
-			isa = PBXGroup;
-			children = (
-				F5994D6226A0AE6D00B94F70 /* Preview Assets.xcassets */,
-			);
-			path = "Preview Content";
 			sourceTree = "<group>";
 		};
 		F5994D6C26A0AE6D00B94F70 /* FoFiTests */ = {
@@ -288,7 +296,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F5994D6326A0AE6D00B94F70 /* Preview Assets.xcassets in Resources */,
 				F5994D6026A0AE6D00B94F70 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -316,6 +323,7 @@
 			files = (
 				F5625B2326A0B32F008B8A1C /* Meal.swift in Sources */,
 				F5625B2026A0B2E8008B8A1C /* MealsViewModel.swift in Sources */,
+				3EB70CA426A9FF5200FBFD6A /* MealsListRepository.swift in Sources */,
 				F5994D5C26A0AE6A00B94F70 /* FoFiApp.swift in Sources */,
 				F5625B2726A0B654008B8A1C /* Mocks.swift in Sources */,
 				F5625B1E26A0B2DD008B8A1C /* MealsView.swift in Sources */,
@@ -478,10 +486,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_ASSET_PATHS = "\"FoFi/Preview Content\"";
 				DEVELOPMENT_TEAM = RAR5AATS55;
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = FoFi/Info.plist;
+				INFOPLIST_FILE = FoFi/Resources/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -500,10 +507,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_ASSET_PATHS = "\"FoFi/Preview Content\"";
 				DEVELOPMENT_TEAM = RAR5AATS55;
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = FoFi/Info.plist;
+				INFOPLIST_FILE = FoFi/Resources/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
