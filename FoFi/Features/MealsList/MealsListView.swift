@@ -1,10 +1,10 @@
 import SwiftUI
 
-struct MealsView: View {
+struct MealsListView: View {
     
-    @ObservedObject var viewModel = MealsViewModel()
+    @ObservedObject var viewModel = MealsListViewModel()
     
-    init(viewModel: MealsViewModel = MealsViewModel()) {
+    init(viewModel: MealsListViewModel = MealsListViewModel()) {
         self.viewModel = viewModel
     }
     
@@ -18,6 +18,6 @@ struct MealsView: View {
 
 struct MealsView_Previews: PreviewProvider {
     static var previews: some View {
-        MealsView()
+        MealsListView()
     }
 }

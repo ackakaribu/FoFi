@@ -8,8 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		3EB70CA426A9FF5200FBFD6A /* MealsListRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EB70CA326A9FF5200FBFD6A /* MealsListRepository.swift */; };
-		F5625B1E26A0B2DD008B8A1C /* MealsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5625B1D26A0B2DD008B8A1C /* MealsView.swift */; };
-		F5625B2026A0B2E8008B8A1C /* MealsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5625B1F26A0B2E8008B8A1C /* MealsViewModel.swift */; };
+		B5BBCADD26C59D2F00CD8510 /* MealsListCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5BBCADC26C59D2F00CD8510 /* MealsListCoordinator.swift */; };
+		B5BBCAE026C59E9D00CD8510 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5BBCADF26C59E9D00CD8510 /* Coordinator.swift */; };
+		B5BBCAE226C5A13800CD8510 /* FoFiAppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5BBCAE126C5A13800CD8510 /* FoFiAppCoordinator.swift */; };
+		F5625B1E26A0B2DD008B8A1C /* MealsListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5625B1D26A0B2DD008B8A1C /* MealsListView.swift */; };
+		F5625B2026A0B2E8008B8A1C /* MealsListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5625B1F26A0B2E8008B8A1C /* MealsListViewModel.swift */; };
 		F5625B2326A0B32F008B8A1C /* Meal.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5625B2226A0B32F008B8A1C /* Meal.swift */; };
 		F5625B2526A0B334008B8A1C /* Food.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5625B2426A0B334008B8A1C /* Food.swift */; };
 		F5625B2726A0B654008B8A1C /* Mocks.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5625B2626A0B654008B8A1C /* Mocks.swift */; };
@@ -39,8 +42,11 @@
 
 /* Begin PBXFileReference section */
 		3EB70CA326A9FF5200FBFD6A /* MealsListRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealsListRepository.swift; sourceTree = "<group>"; };
-		F5625B1D26A0B2DD008B8A1C /* MealsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealsView.swift; sourceTree = "<group>"; };
-		F5625B1F26A0B2E8008B8A1C /* MealsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealsViewModel.swift; sourceTree = "<group>"; };
+		B5BBCADC26C59D2F00CD8510 /* MealsListCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealsListCoordinator.swift; sourceTree = "<group>"; };
+		B5BBCADF26C59E9D00CD8510 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		B5BBCAE126C5A13800CD8510 /* FoFiAppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoFiAppCoordinator.swift; sourceTree = "<group>"; };
+		F5625B1D26A0B2DD008B8A1C /* MealsListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealsListView.swift; sourceTree = "<group>"; };
+		F5625B1F26A0B2E8008B8A1C /* MealsListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealsListViewModel.swift; sourceTree = "<group>"; };
 		F5625B2226A0B32F008B8A1C /* Meal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Meal.swift; sourceTree = "<group>"; };
 		F5625B2426A0B334008B8A1C /* Food.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Food.swift; sourceTree = "<group>"; };
 		F5625B2626A0B654008B8A1C /* Mocks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mocks.swift; sourceTree = "<group>"; };
@@ -86,6 +92,7 @@
 			isa = PBXGroup;
 			children = (
 				F5994D5B26A0AE6A00B94F70 /* FoFiApp.swift */,
+				B5BBCAE126C5A13800CD8510 /* FoFiAppCoordinator.swift */,
 			);
 			path = App;
 			sourceTree = "<group>";
@@ -93,6 +100,7 @@
 		3EB70C9D26A9EE1700FBFD6A /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				B5BBCADF26C59E9D00CD8510 /* Coordinator.swift */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -128,9 +136,10 @@
 			isa = PBXGroup;
 			children = (
 				F5625B2A26A0B7A3008B8A1C /* MealListItemView.swift */,
-				F5625B1D26A0B2DD008B8A1C /* MealsView.swift */,
-				F5625B1F26A0B2E8008B8A1C /* MealsViewModel.swift */,
+				F5625B1D26A0B2DD008B8A1C /* MealsListView.swift */,
+				F5625B1F26A0B2E8008B8A1C /* MealsListViewModel.swift */,
 				3EB70CA326A9FF5200FBFD6A /* MealsListRepository.swift */,
+				B5BBCADC26C59D2F00CD8510 /* MealsListCoordinator.swift */,
 			);
 			path = MealsList;
 			sourceTree = "<group>";
@@ -321,14 +330,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B5BBCAE226C5A13800CD8510 /* FoFiAppCoordinator.swift in Sources */,
 				F5625B2326A0B32F008B8A1C /* Meal.swift in Sources */,
-				F5625B2026A0B2E8008B8A1C /* MealsViewModel.swift in Sources */,
+				F5625B2026A0B2E8008B8A1C /* MealsListViewModel.swift in Sources */,
 				3EB70CA426A9FF5200FBFD6A /* MealsListRepository.swift in Sources */,
 				F5994D5C26A0AE6A00B94F70 /* FoFiApp.swift in Sources */,
+				B5BBCAE026C59E9D00CD8510 /* Coordinator.swift in Sources */,
 				F5625B2726A0B654008B8A1C /* Mocks.swift in Sources */,
-				F5625B1E26A0B2DD008B8A1C /* MealsView.swift in Sources */,
+				F5625B1E26A0B2DD008B8A1C /* MealsListView.swift in Sources */,
 				F5625B2B26A0B7A3008B8A1C /* MealListItemView.swift in Sources */,
 				F5625B2526A0B334008B8A1C /* Food.swift in Sources */,
+				B5BBCADD26C59D2F00CD8510 /* MealsListCoordinator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

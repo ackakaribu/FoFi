@@ -12,7 +12,7 @@ struct FoFiApp: App {
     var body: some Scene {
         WindowGroup {
             NavigationView {
-                MealsView()
+                FoFiAppCoordinator().start()
             }
         }
     }
