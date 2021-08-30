@@ -10,6 +10,6 @@ import SwiftUI
 
 protocol Coordinator {
     
-    associatedtype V:View
+    associatedtype V: View
     @ViewBuilder func start() -> V
 }
